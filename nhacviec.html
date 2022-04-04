@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/remind.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css" />
+    <title>NHẮC VIỆC - PHÂN CÔNG NHẮC VIỆC</title>
+</head>
+
+<body>
+    <div class="remind-section">
+        <div class="remind-section__first">
+            <table class="table table-bordered table-task-summary">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col" class="bghead">Tổng số</th>
+                        <th scope="col" class="bghead">Đúng hạn</th>
+                        <th scope="col" class="bghead">Trễ hẹn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="row-header">Tổng số văn bản đã giao</th>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-header">Tổng số văn bản đã xử lý</th>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="row-header">Tổng số văn bản chưa xử lý</th>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="search-group">
+                <h3 class="search-title">Tìm kiếm văn bản</h3>
+                <form action="#">
+                    <div class="search-form-group">
+                        <input type="search" class="search-task" placeholder="Nhập thông tin tìm kiếm như: số văn bản, v.v.." />
+                        <button type="submit" class="searchtaskbutton">Tìm kiếm</button>
+                        <button class="showmore" onclick="showFormAdvanceSearch()">...</button>
+                    </div>
+                    <div class="advance-search" id="IDadvance-search">
+                        <div class="advance-search-group">
+                            <div class="advance-search-child">
+                                <label for="fromdate">Từ ngày</label>
+                                <input type="date" name="fromdate" id="fromdate" />
+                            </div>
+
+                            <div class="advance-search-child">
+                                <label for="enddate">Đến ngày</label>
+                                <input type="date" name="enddate" />
+                            </div>
+                            <div class="advance-search-child">
+                                <label for="fromdatedelivery">Từ ngày giao</label>
+                                <input type="date" name="fromdatedelivery" id="fromdatedelivery" />
+                            </div>
+                            <div class="advance-search-child">
+                                <label for="enddatedelivery">Đến ngày giao</label>
+                                <input type="date" name="fromdatedelivery" id="enddatedelivery" />
+                            </div>
+                            <div class="advance-search-child">
+                                <label for="statusform">Trạng thái</label>
+                                <select name="statusform" id="statusform">
+                            <option value="Chọn" disabled>Chọn</option>
+                            <option value="Đã hoàn thành">Đã hoàn thành</option>
+                            <option value="Chưa hoàn thành">Chưa hoàn thành</option>
+                        </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="nhacviec-container">
+            <div class="left-list">
+                <ul>
+                    <li class="nameStaff">
+                        <a href="#">Nguyễn Hồng Nguyên</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Phòng TNMT <span>10</span></a>
+
+                    </li>
+                    <li>
+                        <a href="#">Phòng kinh tế <span>10</span></a>
+
+                    </li>
+                    <li>
+                        <a href="#">Phòng Giáo dục <span>10</span></a>
+
+                    </li>
+                    <li>
+                        <a href="#">Nguyễn Văn A <span class="colorone">10</span></a>
+
+                    </li>
+                </ul>
+                <ul>
+                    <li class="nameStaff">
+                        <a href="#">Đoàn Hồng Tươi</a>
+                    </li>
+                    <li>
+                        <a href="#">Phòng TNMT <span>10</span></a>
+
+                    </li>
+                    <li>
+                        <a href="#">Phòng kinh tế <span>10</span></a>
+
+                    </li>
+                    <li>
+                        <a href="#">Phòng Giáo dục <span>10</span></a>
+
+                    </li>
+                    <li>
+                        <a href="#">Nguyễn Văn A <span class="colorone">10</span></a>
+
+                    </li>
+                </ul>
+                <ul>
+                    <li class="nameStaff">
+                        <a href="#">Lý Ngọc Phong</a>
+                    </li>
+                    <li>
+                        <a href="#">Phòng TNMT <span>10</span></a>
+
+                    </li>
+                    <li>
+                        <a href="#">Phòng kinh tế <span>10</span></a>
+
+                    </li>
+                    <li>
+                        <a href="#">Phòng Giáo dục <span>10</span></a>
+
+                    </li>
+                    <li>
+                        <a href="#">Nguyễn Văn A <span class="colorone">10</span></a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="table-document-update">
+                <table class="table table-bordered table-fixed_header">
+                    <thead>
+                        <tr>
+                            <th>Số TT</th>
+                            <th>Số VB</th>
+                            <th> Trích yếu văn bản </th>
+                            <th> Đơn vị phát hành VB </th>
+                            <th> File đính kèm </th>
+                            <th> Ngày đến </th>
+                            <th> Ngày giao </th>
+                            <th> Đến hạn </th>
+                            <th> Tình trạng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 1 </td>
+                            <td> 36/SCT-VP </td>
+                            <td> Đề nghị kiểm tra liên ngành phòng chống gian lận thương mại </td>
+                            <td> Sở Công Thương </td>
+                            <td>
+                                <ul class="listfile-documents">
+                                    <li><a href="#">kiemtraLienNganh.signed.pdf</a></li>
+                                    <li><a href="#">KiemtralienNganh.docx</a></li>
+                                </ul>
+                            </td>
+                            <td> 03/07/2022 </td>
+                            <td> 03/07/2022 </td>
+                            <td> 03/09/2022 </td>
+                            <td><span class="colordone"> Hoàn thành </span></td>
+                        </tr>
+                        <tr>
+                            <td> 1 </td>
+                            <td> 36/SCT-VP </td>
+                            <td> Đề nghị kiểm tra liên ngành phòng chống gian lận thương mại </td>
+                            <td> Sở Công Thương </td>
+                            <td>
+                                <ul class="listfile-documents">
+                                    <li><a href="#">kiemtraLienNganh.signed.pdf</a></li>
+                                    <li><a href="#">KiemtralienNganh.docx</a></li>
+                                </ul>
+                            </td>
+                            <td> 03/07/2022 </td>
+                            <td> 03/07/2022 </td>
+                            <td> 03/09/2022 </td>
+
+                            <td> <span class="colornotdone">Chưa hoàn thành</span> </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+
+    <script>
+        function showFormAdvanceSearch() {
+            const showForm = document.getElementById("IDadvance-search");
+
+            if (showForm.classList.contains("advance-search")) {
+                showForm.classList.remove("advance-search");
+            } else {
+                showForm.classList.add("advance-search");
+            }
+        }
+    </script>
+</body>
+
+</html>

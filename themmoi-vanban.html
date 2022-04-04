@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/remind.css" />
+    <title>Thêm mới văn bản</title>
+</head>
+
+<body>
+    <form action="#">
+
+        <div id="addNewModal" class="modal">
+            <div class="addnew-wrapper">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 class="addnew-wrapper__title">Thêm mới văn bản đến</h3>
+                    <div class="addnew-wrapper__groupinput">
+                        <div class="addnew-wrapper__groupinput__child"><label for="stt">Số TT <span class="red">*</span></label><input type="number" name="stt" required class="sttvb" /></div>
+                        <div class="addnew-wrapper__groupinput__child"><label for="noDocument">Số Văn bản <span class="red">*</span></label><input type="text" name="noDocument" required class="sovanban" /></div>
+                        <div class="addnew-wrapper__groupinput__child"><label for="shortDocument">Trích yếu văn bản <span class="red">*</span></label><input type="text" name="shortDocument" required class="trichyeuvanban"></div>
+                    </div>
+                    <div class="addnew-wrapper__groupinput">
+                        <div class="addnew-wrapper__groupinput__child"><label for="stt">Đơn vị phát hành <span class="red">*</span></label><input type="text" name="donvi" required class="donviphathanh" /></div>
+                        <div class="addnew-wrapper__groupinput__child"><label for="noDocument">Ngày đến <span class="red">*</span></label><input type="date" name="dateArrive" required/></div>
+                        <div class="addnew-wrapper__groupinput__child"><label for="shortDocument">Người giao <span class="red">*</span></label><input type="text" name="asignPersion" required class="nguoigiao" /></div>
+
+                    </div>
+
+                    <div class="addnew-wrapper__groupinput">
+                        <div class="addnew-wrapper__groupinput__child"><label for="stt">File đính kèm <span class="red">*</span></label><input type="file" name="fileattach" required class="uploadfilevb" /></div>
+
+                    </div>
+
+                    <div class="addnew-wrapper__groupbutton">
+                        <button type="submit" name="saveform" class="saveform">Lưu lại</button>
+                        <button name="closeform" class="closeform">Đóng</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        // Get the modal
+        const modal = document.getElementById("addNewModal");
+
+        // Get the button that opens the modal
+        const openModal = document.getElementById("openform");
+
+        // Get the <span> element that closes the modal
+        const closeModal = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        closeModal.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

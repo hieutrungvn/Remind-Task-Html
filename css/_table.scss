@@ -1,0 +1,111 @@
+@import 'mixin';
+.wrapper-table {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 75px;
+}
+
+.table {
+    margin: 20px 0 40px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+    @include mobile {
+        display: block;
+        overflow-x: auto;
+    }
+    @include tablet {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+.row {
+    display: table-row;
+    background: #fff;
+    &:nth-of-type(odd) {
+        background: #f6f6f6;
+    }
+    &.header {
+        font-weight: bold;
+        color: #333;
+        background: #fff;
+        .cell {
+            &:nth-of-type(1) {
+                width: 3%;
+            }
+            &:nth-of-type(2) {
+                width: 10%;
+            }
+            &:nth-of-type(3) {
+                width: 20%;
+            }
+            &:nth-of-type(4) {
+                width: 15%;
+            }
+            &:nth-of-type(5) {
+                width: 17%;
+            }
+            &:nth-of-type(6) {
+                width: 5%;
+            }
+            &:nth-of-type(7) {
+                width: 10%;
+            }
+            &:nth-of-type(8) {
+                width: 10%;
+            }
+            &:nth-of-type(9) {
+                width: 10%;
+            }
+            @include tablet {
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 580px) {
+        padding: 14px 0 7px;
+        display: block;
+        &.header {
+            padding: 0;
+            height: 6px;
+            .cell {
+                display: none;
+            }
+        }
+        .cell {
+            margin-bottom: 10px;
+            &:before {
+                margin-bottom: 3px;
+                content: attr(data-title);
+                min-width: 98px;
+                font-size: 10px;
+                line-height: 10px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #969696;
+                display: block;
+            }
+        }
+    }
+}
+
+.cell {
+    padding: 6px 12px;
+    display: table-cell;
+    border: 1px solid #ddd;
+    .listfile-documents {
+        margin-left: 15px;
+        a {
+            text-decoration: none;
+            color: #333;
+            &:hover {
+                color: $hover-text;
+            }
+        }
+    }
+    @media screen and (max-width: 580px) {
+        padding: 2px 16px;
+        display: block;
+    }
+}

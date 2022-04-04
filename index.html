@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/remind.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css" />
+    <title>VĂN BẢN ĐẾN - PHÂN CÔNG NHẮC VIỆC</title>
+</head>
+
+<body>
+
+    <div class="remind-section">
+        <div class="remind-header">
+            <h1 class="remind-header__text">Văn bản đã đến: <span>150</span></h1>
+            <div class="remind-header__buttonGroup">
+                <button class="BtnSync" name=""><i class="fa-solid fa-arrows-rotate"></i>Sync</button>
+                <button class="BtnAssignTask"><i class="fa-solid fa-check"></i>Giao việc</button>
+                <button class="BtnAddNewTask" id="openform"><i class="fa-solid fa-circle-plus"></i>Thêm mới</button>
+            </div>
+        </div>
+
+        <div class="table-document-income">
+            <table class="table table-bordered table-fixed_header">
+                <thead>
+                    <tr>
+                        <th>Số TT</th>
+                        <th>Số VB</th>
+                        <th> Trích yếu văn bản </th>
+                        <th> Đơn vị phát hành VB </th>
+                        <th> File đính kèm </th>
+                        <th> Ngày đến </th>
+                        <th> Người giao </th>
+                        <th> <span>Đánh dấu</span><input type="checkbox" name="checkAllVB" /> </th>
+                        <th> Các tác vụ </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> 36/SCT-VP </td>
+                        <td> Đề nghị kiểm tra liên ngành phòng chống gian lận thương mại </td>
+                        <td> Sở Công Thương </td>
+                        <td>
+                            <ul class="listfile-documents">
+                                <li><a href="#">kiemtraLienNganh.signed.pdf</a></li>
+                                <li><a href="#">KiemtralienNganh.docx</a></li>
+                            </ul>
+                        </td>
+                        <td> 03/07/2022 </td>
+                        <td> Nguyễn Ngọc Nguyên </td>
+                        <td><input type="checkbox" name="checkVB1" /> </td>
+                        <td>
+                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+                            <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                            <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 1 </td>
+                        <td> 36/SCT-VP </td>
+                        <td> Đề nghị kiểm tra liên ngành phòng chống gian lận thương mại </td>
+                        <td> Sở Công Thương </td>
+                        <td>
+                            <ul class="listfile-documents">
+                                <li><a href="#">kiemtraLienNganh.signed.pdf</a></li>
+                                <li><a href="#">KiemtralienNganh.docx</a></li>
+                            </ul>
+                        </td>
+                        <td> 03/07/2022 </td>
+                        <td> Nguyễn Ngọc Nguyên </td>
+                        <td><input type="checkbox" name="checkVB1" /> </td>
+                        <td>
+                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+                            <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                            <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 12/STNMT-MT </td>
+                        <td> Công văn xử lý nước thải </td>
+                        <td> Sở TNMT </td>
+                        <td>
+                            <ul class="listfile-documents">
+                                <li><a href="#">nuocthai.signed.pdf</a></li>
+
+                            </ul>
+                        </td>
+                        <td> 03/07/2022 </td>
+                        <td> Nguyễn Ngọc Nguyên </td>
+                        <td><input type="checkbox" name="checkVB1" /> </td>
+                        <td>
+                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+                            <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                            <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 36/SCT-VP </td>
+                        <td> Đề nghị kiểm tra liên ngành phòng chống gian lận thương mại </td>
+                        <td> Sở Công Thương </td>
+                        <td>
+                            <ul class="listfile-documents">
+                                <li><a href="#">kiemtraLienNganh.signed.pdf</a></li>
+                                <li><a href="#">KiemtralienNganh.docx</a></li>
+                            </ul>
+                        </td>
+                        <td> 03/07/2022 </td>
+                        <td> Nguyễn Ngọc Nguyên </td>
+                        <td><input type="checkbox" name="checkVB1" /> </td>
+                        <td>
+                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+                            <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                            <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 36/SCT-VP </td>
+                        <td> Đề nghị kiểm tra liên ngành phòng chống gian lận thương mại </td>
+                        <td> Sở Công Thương </td>
+                        <td>
+                            <ul class="listfile-documents">
+                                <li><a href="#">kiemtraLienNganh.signed.pdf</a></li>
+                                <li><a href="#">KiemtralienNganh.docx</a></li>
+                            </ul>
+                        </td>
+                        <td> 03/07/2022 </td>
+                        <td> Nguyễn Ngọc Nguyên </td>
+                        <td><input type="checkbox" name="checkVB1" /> </td>
+                        <td>
+                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+                            <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                            <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 1 </td>
+                        <td> 36/SCT-VP </td>
+                        <td> Đề nghị kiểm tra liên ngành phòng chống gian lận thương mại </td>
+                        <td> Sở Công Thương </td>
+                        <td>
+                            <ul class="listfile-documents">
+                                <li><a href="#">kiemtraLienNganh.signed.pdf</a></li>
+                                <li><a href="#">KiemtralienNganh.docx</a></li>
+                            </ul>
+                        </td>
+                        <td> 03/07/2022 </td>
+                        <td> Nguyễn Ngọc Nguyên </td>
+                        <td><input type="checkbox" name="checkVB1" /> </td>
+                        <td>
+                            <a href="#"><i class="fa-regular fa-eye"></i></a>
+                            <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                            <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+    <form action="#">
+
+        <div id="addNewModal" class="modal">
+            <div class="addnew-wrapper modal-content">
+                <!-- Modal content -->
+
+                <span class="closeForm">&times;</span>
+                <h3 class="addnew-wrapper__title">Thêm mới văn bản đến</h3>
+                <div class="addnew-wrapper__groupinput">
+                    <div class="addnew-wrapper__groupinput__child"><label for="stt">Số TT <span class="red">*</span></label><input type="number" name="stt" required class="sttvb" /></div>
+                    <div class="addnew-wrapper__groupinput__child"><label for="noDocument">Số Văn bản <span class="red">*</span></label><input type="text" name="noDocument" required class="sovanban" /></div>
+                    <div class="addnew-wrapper__groupinput__child"><label for="shortDocument">Trích yếu văn bản <span class="red">*</span></label><input type="text" name="shortDocument" required class="trichyeuvanban"></div>
+                </div>
+                <div class="addnew-wrapper__groupinput">
+                    <div class="addnew-wrapper__groupinput__child"><label for="stt">Đơn vị phát hành <span class="red">*</span></label><input type="text" name="donvi" required class="donviphathanh" /></div>
+                    <div class="addnew-wrapper__groupinput__child"><label for="noDocument">Ngày đến <span class="red">*</span></label><input type="date" name="dateArrive" required/></div>
+                    <div class="addnew-wrapper__groupinput__child"><label for="shortDocument">Người giao <span class="red">*</span></label><input type="text" name="asignPersion" required class="nguoigiao" /></div>
+
+                </div>
+
+                <div class="addnew-wrapper__groupinput">
+                    <div class="addnew-wrapper__groupinput__child"><label for="stt">File đính kèm <span class="red">*</span></label><input type="file" name="fileattach" required class="uploadfilevb" /></div>
+
+                </div>
+
+                <div class="addnew-wrapper__groupbutton">
+                    <button type="submit" name="saveform" class="saveform">Lưu lại</button>
+                    <button name="closeform" class="closeform2">Đóng</button>
+
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <script>
+        // Get the modal
+        const modal = document.getElementById("addNewModal");
+
+        // Get the button that opens the modal
+        const openModal = document.getElementById("openform");
+
+        // Get the <span> element that closes the modal
+        const closeModal = document.getElementsByClassName("closeForm")[0];
+
+        const closeModal2 = document.getElementsByClassName("closeform2")[0];
+
+        // When the user clicks the button, open the modal 
+        openModal.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks on button Close, close the modal
+        closeModal2.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
