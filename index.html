@@ -17,8 +17,8 @@
             <h1 class="remind-header__text">Văn bản đã đến: <span>150</span></h1>
             <div class="remind-header__buttonGroup">
                 <button class="BtnSync" name=""><i class="fa-solid fa-arrows-rotate"></i>Sync</button>
-                <button class="BtnAssignTask"><i class="fa-solid fa-check"></i>Giao việc</button>
-                <button class="BtnAddNewTask" id="openform"><i class="fa-solid fa-circle-plus"></i>Thêm mới</button>
+                <button class="BtnAssignTask" id="openformAssign"><i class="fa-solid fa-check"></i>Giao việc</button>
+                <button class="BtnAddNewTask" id="openformAdd"><i class="fa-solid fa-circle-plus"></i>Thêm mới</button>
             </div>
         </div>
 
@@ -212,25 +212,33 @@
         // Get the modal
         const modal = document.getElementById("addNewModal");
 
+        const btnModals = document.querySelectorAll("[data-trigger='modal']");
+
         // Get the button that opens the modal
-        const openModal = document.getElementById("openform");
+        const openModal = document.getElementById("openformAdd");
+
+        const openModal2 = document.getElementById("openformAssign");
 
         // Get the <span> element that closes the modal
         const closeModal = document.getElementsByClassName("closeForm")[0];
 
         const closeModal2 = document.getElementsByClassName("closeform2")[0];
 
-        // When the user clicks the button, open the modal 
+        // When the user clicks the button, open the modal  Add new Form
         openModal.onclick = function() {
+                modal.style.display = "block";
+            }
+            // When the user clicks the button, open the modal Assign Form
+        openModal2.onclick = function() {
             modal.style.display = "block";
         }
 
-        // When the user clicks on <span> (x), close the modal
+        // When the user clicks on <span> (x), close the modal Add New Form
         closeModal.onclick = function() {
             modal.style.display = "none";
         }
 
-        // When the user clicks on button Close, close the modal
+        // When the user clicks on button Close, close the modal Assign Form
         closeModal2.onclick = function() {
             modal.style.display = "none";
         }

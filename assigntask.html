@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/remind.css" />
+    <title>Thêm mới văn bản</title>
+</head>
+
+<body>
+    <form action="#">
+
+        <div id="addNewModal" class="modal">
+            <div class="assigntask-wrapper">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="closeForm">&times;</span>
+                    <h3 class="assigntask-wrapper__title">Giao việc</h3>
+                    <div class="assigntask-wrapper__groupinput">
+                        <div class="assigntask-wrapper__groupinput__child"><label for="noDocument">Tên công việc <span class="red">*</span></label><input type="text" name="nameDocument" required class="tencongviec" /></div>
+                        <div class="assigntask-wrapper__groupinput__child"><label for="typeofDocument">Loại công việc<span class="red">*</span></label><input type="text" name="typeofDocument" required class="loaicv"></div>
+                    </div>
+                    <div class="assigntask-wrapper__groupinput">
+                        <div class="assigntask-wrapper__groupinput__child"><label for="stt">Người thực hiện <span class="red">*</span></label><input type="text" name="personassign" required class="donviphathanh" /></div>
+                        <div class="assigntask-wrapper__groupinput__child">
+                            <div class="assigntask-wrapper__groupinput__child__2">
+
+                                <div class="dategroup">
+                                    <label for="fromdate">Từ ngày <span class="red">*</span></label><input type="date" name="fromdate" required/>
+                                </div>
+                                <div class="dategroup">
+                                    <label for="enddate">Đến ngày <span class="red">*</span></label><input type="date" name="enddate" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="assigntask-wrapper__groupinput">
+
+                    <label class="radio">
+                        <input type="radio" name="foobar">
+                        Bình thường
+                      </label>
+                    <label class="radio">
+                        <input type="radio" name="foobar" checked>
+                        Quan trọng
+                      </label>
+                    <label class="radio">
+                        <input type="radio" name="foobar">
+                        Rất quan trọng
+                      </label>
+                    <label class="radio">
+                        <input type="radio" name="foobar">
+                        Không quan trọng
+                      </label>
+                    <label class="radio">
+                        <input type="radio" name="foobar">
+                        Thiết yếu
+                    </label>
+
+                </div>
+                <div class="assigntask-wrapper__groupinput">
+                    <label for="noidungform">Nội dung</label>
+                    <textarea class="textarea" name="message" class="noidungform"></textarea>
+                </div>
+                <div class="assigntask-wrapper__groupinput">
+                    <label for="phanloai">Phân loại</label>
+                    <input type="text" name="phanloai" class="phanloai"></input>
+                </div>
+                <div class="assigntask-wrapper__groupinput">
+                    <div class="addnew-wrapper__groupinput__child"><label for="stt">File đính kèm <span class="red">*</span></label><input type="file" name="fileattach" required class="uploadfilevb" /></div>
+
+                </div>
+
+                <div class="assigntask-wrapper__groupbutton">
+                    <button type="submit" name="saveform" class="saveform">Lưu lại</button>
+                    <button name="closeform" class="closeform">Đóng</button>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+
+
+
+
+
+</body>
+
+</html>
